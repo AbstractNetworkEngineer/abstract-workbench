@@ -19,7 +19,7 @@
 ## 端口与安全
 
 **端口**：默认监听 `127.0.0.1:18765`（冷门端口，避开 8000/8080/3000 等常用服务）。网页、REST API、WebSocket 终端**共用这一个端口**，SSH/Telnet 连设备走的是出站连接，不需要额外端口。如需更改：
-![Uploading 图片.png…]()
+
 
 ```powershell
 set ABSTRACT_WORKBENCH_PORT=端口号   # 仅本机回环
