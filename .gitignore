@@ -1,0 +1,15 @@
+.venv/
+build_app/
+dist_app/
+frontend/dist/
+frontend/node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+data/
+*.db
+*.sqlite
+*.sqlite3
+.secret*
