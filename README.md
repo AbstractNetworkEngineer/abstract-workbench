@@ -1,6 +1,8 @@
 # AI+网络运维平台
 
-> **0.2.0 版 | 网络设备连接、终端操作、备份、巡检、抓包和 AI+ 辅助集中在一个本地工作台。**
+> **0.2.0 | 面向网络工程师的本地化网络设备运维工作台。**
+>
+> 集设备接入与实时 CLI、配置备份、巡检、拓扑发现、抓包分析、配置漂移、审计与 AI+ 辅助于一体。支持 SSH、Telnet、Serial 和模拟设备；AI+ 接入 OpenAI Chat Completions 兼容 API，配置写入须经人工确认。
 
 [完整图文介绍](docs/software-introduction.md) · [下载 Word 图文版](docs/software-introduction.docx)
 
@@ -8,7 +10,7 @@
 
 ## 软件介绍
 
-AI+网络运维平台面向网络设备运维场景，支持 SSH、Telnet、Serial 串口及模拟设备连接，提供实时 CLI、配置备份、智能巡检、拓扑发现、抓包分析、运维检测、配置漂移和审计记录。AI+ 可通过 OpenAI Chat Completions 兼容 API 接入，用于运维问答、配置分析、命令生成和排障；配置写入须经人工确认。
+平台面向网络工程师与网络运维场景，以本地部署为主，集中管理设备接入、CLI 交互和日常运维流程。除手动与定时备份、巡检、拓扑发现、抓包分析、配置差异和审计外，还提供 AI+ 运维问答、配置分析、排障与命令生成；执行配置写入前须由操作人员确认。
 
 | 模块 | 主要用途 |
 |---|---|
@@ -42,8 +44,8 @@ GitHub 仓库提供源码，不包含 `dist_app` 下的打包可执行文件。�
 在 PowerShell 中执行：
 
 ```powershell
-git clone https://github.com/AbstractNetworkEngineer/abstract-workbench.git
-cd abstract-workbench
+git clone https://github.com/AbstractNetworkEngineer/ai-plus-network-ops.git
+cd ai-plus-network-ops
 
 py -3 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install --upgrade pip
